@@ -1,10 +1,14 @@
 def main():
 
-    c = float(input("What do you have left in pesos? "))
-    p = float(input("What do you have left in soles? "))
-    b = float(input("What do you have left in reais? "))
-    u = (c * 0.00032)+(p * 0.30)+ (b * 0.19)
-    m = (c*0.0054)+(p* 5.07)+(b * 3.17)
+    pesos = float(input("What do you have left in pesos? "))
+    soles = float(input("What do you have left in soles? "))
+    reais = float(input("What do you have left in reais? "))
+
+    usd = (pesos * 0.00032)+(soles * 0.30)+ (reais * 0.19)
+    mxn =  round(usd* 17.07, 2)
+    
+    print(f"USD:{round(usd,2)}")
+    print(f"MXN:{mxn}")
 
 
 if __name__=="__main__":
