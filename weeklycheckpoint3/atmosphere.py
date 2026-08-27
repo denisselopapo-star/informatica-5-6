@@ -1,6 +1,6 @@
 def main():
 
-    layer = input("Descent atmosphere layer: ").strip().title()
+    layer = float(input("Descent atmosphere layer: ")).strip().title()
 
     Exo = 700, 10000
     The = 85, 700
