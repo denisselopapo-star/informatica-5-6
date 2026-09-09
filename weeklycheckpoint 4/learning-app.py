@@ -3,23 +3,29 @@ import random
 def main():
 
     print("Welcome to Mathenaitor plus!")
-    number1 = random.randint(1,99)
-    number2 = random.randint(1,99)
-    guess = 0
-    attempts = 3
-    operation = number1 + number2
-    streak = "⭐"
+    streak = 0
+    star = "⭐"
 
-    print("what is ", number1,"+",number2,"?")
-    guess = int(input("your answer: "))
-    while attempts > 0:
+
+    while streak != 3:
+        print("what is ", number1,"+",number2,"?")
+        number1 = random.randint(1,99)
+        number2 = random.randint(1,99)
+        operation = number1 + number2
+        guess = int(input("Your answer: "))
         if guess != operation:
-        print("Incorrect!")
-        print("The answer was: ", operation)
-        elif guess == operation:
-            print("Correct!")
-            print("Streak: ",streak)
-            break
+            print("Incorrect!")
+            print("The answer was: ", operation)
+            elif guess == operation:
+                streak += 1
+            if streak == 1:
+                print("Correct!")
+                print("Streak: ", star)
+            elif streak == 2
+                print("Streak: ", star + star)
+            else:
+                print("Streak:" star + star + star)
+                print("great job!")
 
 
 
