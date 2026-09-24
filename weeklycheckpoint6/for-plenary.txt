@@ -1,0 +1,7 @@
+Write a description for a while loop.
+a while loop is to create a cycle with a condition that we cand uodte with ifs to get the rsult we want in our code.
+
+Write a description for a for loop.
+ the for loops is a way of iteration that can help us find something with an index in a variable
+Compare a while loop to a for loop.
+ I think the comparation is that even if we can condition both of them they do different things, one is a cycle that will be infinite unless we brake it and the otherone is an iteation that will constantly change.
