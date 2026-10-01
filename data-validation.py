@@ -1,6 +1,4 @@
 def main():
-    name = input("Enter a name:")
-    print(f"Stored name: {name}")
 
     not_validated = True #Initialization
 
@@ -12,6 +10,17 @@ def main():
                 not_validated = False
         except ValueError:
             print("You must enter a number between 1 and 10.")
+
+    while True:
+        try:
+            name = input("Enter a name:")
+            f_letter = name[0]
+            print("Name stored successfully.")
+            break
+        except IndexError:
+            print("You MUST enter your name.")
+
+
 
 if __name__=="__main__":
     main()
