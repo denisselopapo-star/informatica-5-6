@@ -24,6 +24,7 @@ def start_game(file):
         else:
                 print("Invalid guess. Try again.")
     for i in secret_word:
+        
 
 
 
