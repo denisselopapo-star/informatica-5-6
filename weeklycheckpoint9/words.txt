@@ -1,4 +1,4 @@
-Beacon
+beacon
 Meadow
 Pinnacle
 Whisper
